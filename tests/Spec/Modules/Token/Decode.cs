@@ -5,7 +5,7 @@ using System;
 
 namespace MagicAdminTests
 {
-    public class TokenModule_Decode
+    public class DecodeTests
     {
         [Fact]
         public void Successfully_Decodes_DIDT()
