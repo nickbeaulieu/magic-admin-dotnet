@@ -21,8 +21,7 @@ See the [developer documentation](https://docs.magic.link/admin-sdk/node-js) to 
 Integrating your .NET application with Magic will require the NuGet package:
 
 ```bash
-dotnet add package MagicAdminSDK --version 0.1.0
-dotnet add package Nethereum.Web3 --version 3.8.0
+dotnet add package MagicAdminSDK
 ```
 
 ## ⚡️ Quick Start

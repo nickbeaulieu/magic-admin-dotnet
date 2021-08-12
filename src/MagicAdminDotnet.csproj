@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <PackageId>MagicAdminDotnet</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Nick Beaulieu</Authors>
   </PropertyGroup>
 
   <ItemGroup>
