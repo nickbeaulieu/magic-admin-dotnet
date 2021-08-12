@@ -2,9 +2,13 @@
 
 #### 🚀 Enhancement
 
+Published first version of package to [Nuget](https://www.nuget.org/packages/MagicAdminDotnet/)
+
 #### 🐛 Bug Fix
 
-#### ⚠️ Pushed to `master`
+#### ⚠️ Pushed to `main`
+
+[@nickbeaulieu](https://github.com/nickbeaulieu) [main 08ecd6f] Do not suggest specific version
 
 #### 🔩 Dependency Updates
 

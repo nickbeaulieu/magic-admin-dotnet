@@ -21,7 +21,7 @@ See the [developer documentation](https://docs.magic.link/admin-sdk/node-js) to 
 Integrating your .NET application with Magic will require the NuGet package:
 
 ```bash
-dotnet add package MagicAdminSDK
+dotnet add package MagicAdminDotnet
 ```
 
 ## ⚡️ Quick Start
@@ -36,4 +36,17 @@ var Magic = new MagicAdminSDK('YOUR_SECRET_API_KEY');
 // Read the docs to learn about next steps! 🚀
 ```
 
-## Examples
+## 😀 Examples
+
+**Validate a token and load issuer**
+
+`Issuer` is what should be stored to the database as a [unique ID per user](https://magic.link/docs/introduction/faq#what-is-the-unique-user-id-i-should-save-to-my-database).
+
+```cs
+// Using the `MagicAdminSDK` instance created above
+
+var bearerString = Request.Headers[HeaderNames.Authorization];
+var token = Magic.Utils.ParseAuthorizationHeader(bearerString);
+Magic.Token.Validate(token);
+var metadata = await Magic.Users.GetMetadataByToken(token);
+```
